@@ -1,0 +1,8 @@
+<h1>Customer list<h1>
+<div *ngFor="let customer of customers; let i=index">
+
+  {{i+1}}) Name is {{customer.customername | uppercase}}. Balance is {{customer.balance | uppercase}}
+  
+  
+  </div>
+  <br>

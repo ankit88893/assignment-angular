@@ -1,14 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppComponent } from './app.component';
+import { CustomersListComponent } from './customers-list/customers-list.component';
+import { CustomerDetailsComponent } from './customer-details/customer-details.component';
+import { AddCustomerComponent } from './add-customer/add-customer.component';
+import {FormsModule}  from '@angular/forms'
+import { LengthPipe } from './pipes/length';
+import { Reversepipe } from './pipes/reverse';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomersListComponent,
+    CustomerDetailsComponent,
+    AddCustomerComponent,
+    LengthPipe,
+    Reversepipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
